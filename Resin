@@ -1,0 +1,12 @@
+current_resin = 67
+max_resin = 200
+
+# 1 Resin = 8 minutes
+resin_needed + max_resin - current_resin
+total_minutes_needed = resin_needed * 8
+
+# Convert the remaining minutes to hours and remaining minutes
+hours = total_minutes_needed / / 60
+minutes = total_minutes_needed % 60
+
+print(f"Time remaining to reach 200 Resin: {hours} hours and {minutes} minutes.")
